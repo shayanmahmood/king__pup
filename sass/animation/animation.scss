@@ -1,0 +1,12 @@
+@keyframes colorChanger {
+    0%{
+        background-image:  radial-gradient(#FFDC4A 30%, #253746 70%,);
+    }
+    50%{
+        background-image:  radial-gradient(#ffdc4a 10%, #253746 90%,);
+    }
+    100%{
+        background-image:  radial-gradient(#FFDC4A 30%, #253746 70%,);
+    }
+}
+
