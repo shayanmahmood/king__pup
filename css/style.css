@@ -18,6 +18,9 @@
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  .navigation__button:hover {
+    animation: none;
+    transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important; }
 
 @media only screen and (max-width: 56.25em) {
   .navigation__button {
@@ -43,10 +46,6 @@
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   animation-name: colorChanger;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
-  animation-name: round;
   animation-duration: 8s;
   animation-iteration-count: infinite; }
 
@@ -106,7 +105,7 @@
 .navigation__link:hover,
 .navigation__link:active {
   background-position: 103%;
-  color: #89165B;
+  color: #FFDC4A;
   -webkit-transform: translateX(1rem);
   transform: translateX(1rem); }
 
@@ -186,11 +185,11 @@ body {
   box-sizing: border-box; }
 
 ::-moz-selection {
-  background-color: #55c57a;
+  background-color: #FFDC4A;
   color: #fff; }
 
 ::selection {
-  background-color: #55c57a;
+  background-color: #FFDC4A;
   color: #fff; }
 
 @media only screen and (max-width: 75em) {
@@ -257,9 +256,9 @@ body {
 
 @keyframes round {
   0% {
-    transform: rotatey(180deg); }
+    transform: rotate(0deg); }
   50% {
-    transform: rotatey(360deg);
+    transform: rotate(359deg);
     background-color: #FFDC4A; }
   100% {
-    transform: rotatey(180deg); } }
+    transform: rotate(0deg); } }
