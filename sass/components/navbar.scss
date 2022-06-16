@@ -3,6 +3,10 @@
 }
 
 .navigation__button {
+    animation-name: round;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+   transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
     background-color: #fff;
     height: 7rem;
     width: 7rem;
@@ -48,6 +52,9 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
    transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+   animation-name: round;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
   
 }
 

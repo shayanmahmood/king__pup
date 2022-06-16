@@ -2,6 +2,10 @@
   display: none; }
 
 .navigation__button {
+  animation-name: round;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
   background-color: #fff;
   height: 7rem;
   width: 7rem;
@@ -41,7 +45,10 @@
   animation-name: colorChanger;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important; }
+  transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+  animation-name: round;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 56.25em) {
   .navigation__background {
@@ -171,7 +178,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-color: #89165B;
+  background-image: linear-gradient(#FFDC4A, #253746);
   overflow: hidden; }
 
 body {
@@ -205,12 +212,10 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background-color: #89165B;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: repeat(2, 50%); }
+  grid-template-columns: 40% 60%; }
   .main--img-con {
-    background-color: #C5D7FF;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -223,6 +228,24 @@ body {
     font-weight: bolder;
     font-size: 3rem;
     font-family: 'Kdam Thmor Pro', sans-serif; }
+    .main--text-box--heading--more {
+      padding-top: -2rem; }
+      .main--text-box--heading--more--btn {
+        transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: #253746;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: #FFDC4A;
+        border: none;
+        outline: none;
+        font-family: 'Kdam Thmor Pro', sans-serif; }
+        .main--text-box--heading--more--btn:hover {
+          transition: all 7s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+          cursor: pointer;
+          box-shadow: 6px  5px 10px #253746;
+          background-color: #ffdb4a9e; }
 
 @keyframes colorChanger {
   0% {
@@ -231,3 +254,12 @@ body {
     background-image: radial-gradient(#ffdc4a 10%, #253746 90%); }
   100% {
     background-image: radial-gradient(#FFDC4A 30%, #253746 70%); } }
+
+@keyframes round {
+  0% {
+    transform: rotatey(180deg); }
+  50% {
+    transform: rotatey(360deg);
+    background-color: #FFDC4A; }
+  100% {
+    transform: rotatey(180deg); } }

@@ -10,3 +10,15 @@
     }
 }
 
+@keyframes round {
+    0%{
+        transform: rotatey(180deg);
+    }
+    50%{
+        transform: rotatey(360deg);
+        background-color: #FFDC4A;
+    }
+    100%{
+        transform: rotatey(180deg);
+    }
+}
