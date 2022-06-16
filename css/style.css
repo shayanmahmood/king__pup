@@ -192,6 +192,11 @@ body {
   background-color: #FFDC4A;
   color: #fff; }
 
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #000;
+    display: none; } }
+
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%; } }
